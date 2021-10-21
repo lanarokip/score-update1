@@ -2,6 +2,7 @@ package com.kipkoech.petfinderip;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -26,5 +27,11 @@ public class PetActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pet);
         ButterKnife.bind(this);
+
+        Intent intent = getIntent();
+        String gender = intent.getStringExtra("location");
+        mLocationTextView.setText(gender+"animals");
+
+        interface1 client = PetClient.getClient();
     }
 }
