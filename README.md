@@ -16,7 +16,7 @@ Clone this repository to your local repository.
 
 You need the following softwares installed:
 - java
-- JDK - Java Development Kit
+- JDK - Jav`a Development Kit
 - Gradle
 - Android virtual device
 - An IDE - ANDROID STUDIO
